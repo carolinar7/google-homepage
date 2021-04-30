@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<header>
+  <title>Google</title>
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap">
+  <script type="text/javascript" src="scripts/index.js"></script>
+</header>
+<body id="body">
+  <nav id="navigation">
+    <div id="top-bar">
+      <div id="top-bar-left" class="left-aligned">
+        <a href="https://about.google.com">About</a>
+        <a href="https://store.google.com">Store</a>
+      </div>
+      <div id="top-bar-right" class="right-aligned">
+        <a href="https://mail.google.com">Gmail</a>
+        <a href="https://images.google.com">Images</a>
+        <a href="https://about.google/products/"><img>Google Apps</a>
+        <button id="sign-in-button" onclick="signIn()" class="button-style-1">Sign In</button>
+      </div>
+    </div>
+  </nav>
+  <div id="google-logo-container">
+    <img id="google-logo" src="images/google-logo.png" alt="Google Logo">
+  </div>
+  <div id="core-page">
+    <div id="search-bar" onmouseover="searchBarHover(true)" onmouseout="searchBarHover(false)">
+      <img id="search-icon" src="images/search-icon.png" alt="Search icon">
+      <textarea id="search-textarea" wrap="off" rows="1" onfocus="searchOnFocus()" onblur="searchOnBlur()" oninput="displayX()"></textarea>
+      <img id="x-icon" onclick="clearText()" src="images/x-icon.svg" alt="X icon">
+    </div>
+    <div id="core-page-button-group">
+      <button id="search-button" onclick="search(true)" class="button-style-1">Google Search</button>
+      <button id="feeling-lucky-button" onclick="feelingLucky()" class="button-style-1">I'm Feeling Lucky</button>
+    </div>
+  </div>
+  <div id="filler"></div>
+  <footer id="footer">
+    <div id="bottom-bar">
+      <div id="bottom-bar-left">
+        <a href="https://ads.google.com">Advertising</a>
+        <a href="https://business.google.com/">Business</a>
+        <a href="https://www.google.com/search/howsearchworks/">How Search works</a>
+      </div>
+      <div id="bottom-bar-middle">
+        <img id="green-leaf-icon" src="images/green-leaf-icon.png" alt="Green leaf">
+        <a href="https://sustainability.google/commitments">Carbon neutral since 2007</a>
+      </div>
+      <div id="bottom-bar-right">
+        <a href="https://policies.google.com/privacy">Privacy</a>
+        <a href="https://policies.google.com/terms">Terms</a>
+      </div>
+    </div>
+  </footer>
+</body>
